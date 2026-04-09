@@ -1,0 +1,20 @@
+agent:
+  name: eia-site-screener
+  version: 1.0.0
+  entry: src/agent/index.ts
+
+environment:
+  variables:
+    - TINYFISH_API_KEY
+    - GEOCONTEXTUALIZE_URL
+
+capabilities:
+  tools: true
+  web_browsing: true
+  structured_output: true
+
+deployment:
+  target: lua-cloud
+  auto_scale: true
+  max_concurrent_runs: 10
+  timeout_seconds: 180

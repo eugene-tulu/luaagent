@@ -1,7 +1,10 @@
 agent:
   agentId: baseAgent_agent_1775731646521_efoku49nj
   orgId: e36afe29-e6e3-4144-bfdb-81ecc080d43a
-skills: []
+skills:
+  - name: eia_site_screening
+    skillId: 98e67fe7-90a0-4da1-b8ee-3e0b0f00e7e5
+    version: 1.0.1
 webhooks: []
 jobs: []
 preprocessors: []

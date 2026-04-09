@@ -1,33 +1,41 @@
 {
-  "name": "lua-skill",
-  "version": "1.0.1-beta.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "module",
-  "main": "src/index.ts",
+  "name": "site-screening-agent",
+  "version": "1.0.0",
+  "description": "Live EIA Site Screener - Native Lua AI Agent for Kenyan NEMA compliance",
+  "main": "src/agent/index.ts",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lua test",
+    "chat": "lua chat",
+    "push": "lua push",
+    "deploy": "lua deploy"
+  },
+  "keywords": [
+    "NEMA",
+    "environmental",
+    "screening",
+    "Kenya",
+    "EMCA",
+    "EIA"
+  ],
+  "author": "Site Screening Agent Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/zod": "^3.19.0",
+    "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@pinecone-database/pinecone": "^6.1.2",
-    "@types/inquirer": "^9.0.9",
-    "@types/js-yaml": "^4.0.9",
-    "axios": "^1.6.0",
-    "inquirer": "^12.9.6",
-    "stripe": "^17.5.0",
-    "js-yaml": "^4.1.0",
-    "lua-cli": "^3.7.0",
-    "openai": "^5.23.0",
-    "uuid": "^13.0.0",
-    "zod": "^3.24.1"
+    "lua-cli": "^1.0.0",
+    "zod": "^3.19.0"
   },
-  "devDependencies": {
-    "@types/node": "^20.10.0",
-    "tsx": "^4.7.0",
-    "typescript": "^5.9.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugene-tulu/luaagent.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eugene-tulu/luaagent/issues"
+  },
+  "homepage": "https://github.com/eugene-tulu/luaagent#readme"
 }
